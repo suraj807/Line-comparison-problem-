@@ -61,8 +61,20 @@ namespace Line_comparison_problem
 
             Console.WriteLine($"Length of line using two points ({x1},{x1}) and ({y2},{y2}) is : {Lengthline2}");
 
-            Console.Write("\n\nFirst Line is Equal To Second Line : ");
-            Console.WriteLine((Lengthline1).Equals(Lengthline2));
+
+            if (Lengthline1 > Lengthline2)
+
+                Console.WriteLine("Lengthline1 is greater than Lengthline2");
+
+            else if (Lengthline1 < Lengthline2)
+
+                Console.WriteLine("Lengthline1 is less than Lengthline2");
+
+            else
+
+                Console.WriteLine("Lengthline1 are equal Lengthline2");
+
+
         }
     }
 }
